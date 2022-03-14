@@ -1,2 +1,5 @@
-com.linkedin.events.example.person.Person.1.avsc
-com.linkedin.events.example.or_test.Person.1.avsc
+com.trip.fltdata.poc.o_orders.1.avsc
+com.trip.fltdata.poc.o_flight.1.avsc
+com.ca.poc.T_FRN_USERPROFILE.1.avsc
+com.ca.poc.PASSENGER.1.avsc
+

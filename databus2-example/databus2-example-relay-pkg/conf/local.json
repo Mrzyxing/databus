@@ -1,0 +1,21 @@
+{
+  "name": "zyxingtest",
+  "id": 1,
+  "uri": "jdbc:oracle:thin:databus/databus@192.168.56.101:1521:helowin",
+  "slowSourceQueryThreshold": 2000,
+  "sources": [
+    {
+      "id": 101,
+      "name": "com.trip.fltdata.poc.o_orders",
+      "uri": "databus.o_orders",
+      "partitionFunction": "constant:1"
+    },
+    {
+      "id": 102,
+      "name": "com.trip.fltdata.poc.o_flight",
+      "uri": "databus.o_flight",
+      "partitionFunction": "constant:1"
+    }
+  ]
+}
+

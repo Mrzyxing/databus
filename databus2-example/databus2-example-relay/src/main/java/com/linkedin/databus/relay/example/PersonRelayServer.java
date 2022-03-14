@@ -36,24 +36,25 @@ import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;
 public class PersonRelayServer extends DatabusRelayMain {
   public static final String MODULE = PersonRelayServer.class.getName();
   public static final Logger LOG = Logger.getLogger(MODULE);
-  static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.linkedin.events.example.person.Person";
-  static final int PERSON_SRC_ID = 40;
+  // static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.linkedin.events.example.person.Person";
+  static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.ca.poc";
+  static final int PERSON_SRC_ID = 1;
 
   MultiServerSequenceNumberHandler _maxScnReaderWriters;
   protected Map<PhysicalPartition, EventProducer> _producers;
 
   public PersonRelayServer() throws IOException, InvalidConfigException, DatabusException
   {
-    this(new HttpRelay.Config(), null);
+    this(new Config(), null);
   }
 
-  public PersonRelayServer(HttpRelay.Config config, PhysicalSourceStaticConfig [] pConfigs)
+  public PersonRelayServer(Config config, PhysicalSourceStaticConfig [] pConfigs)
   throws IOException, InvalidConfigException, DatabusException
   {
     this(config.build(), pConfigs);
   }
 
-  public PersonRelayServer(HttpRelay.StaticConfig config, PhysicalSourceStaticConfig [] pConfigs)
+  public PersonRelayServer(StaticConfig config, PhysicalSourceStaticConfig [] pConfigs)
   throws IOException, InvalidConfigException, DatabusException
   {
     super(config, pConfigs);
@@ -68,7 +69,7 @@ public class PersonRelayServer extends DatabusRelayMain {
      cli.parseRelayConfig();
      // Process the startup properties and load configuration
      PhysicalSourceStaticConfig[] pStaticConfigs = cli.getPhysicalSourceStaticConfigs();
-     HttpRelay.StaticConfig staticConfig = cli.getRelayConfigBuilder().build();
+     StaticConfig staticConfig = cli.getRelayConfigBuilder().build();
 
      // Create and initialize the server instance
      DatabusRelayMain serverContainer = new DatabusRelayMain(staticConfig, pStaticConfigs);
@@ -79,3 +80,4 @@ public class PersonRelayServer extends DatabusRelayMain {
   }
 
 }
+

@@ -1,0 +1,28 @@
+{
+  "meta" : "dbFieldName=sy$o_orders;dbFieldType=sy$o_orders;pk=OID",
+  "name" : "o_orders_V1",
+  "namespace" : "com.trip.fltdata.poc",
+  "doc" : "Auto-generated Avro schema for sy$o_orders. Generated at Feb 10, 2022 07:50:22 AM EST",
+  "type" : "record",
+  "fields" : [ {
+    "default" : null,
+    "meta" : "dbFieldName=TXN;dbFieldPosition=0;dbFieldType=LONG;",
+    "name" : "TXN",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=OID;dbFieldPosition=1;dbFieldType=LONG;",
+    "name" : "OID",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=UNAME;dbFieldPosition=2;dbFieldType=VARCHAR2;",
+    "name" : "UNAME",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=UAGE;dbFieldPosition=3;dbFieldType=LONG;",
+    "name" : "UAGE",
+    "type" : [ "null", "long" ]
+  } ]
+}

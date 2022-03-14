@@ -95,6 +95,7 @@ import com.linkedin.databus2.core.container.request.ContainerAdminRequestProcess
 import com.linkedin.databus2.core.container.request.ContainerStatsRequestProcessor;
 import com.linkedin.databus2.core.container.request.JavaStatsRequestProcessor;
 import com.linkedin.databus2.core.container.request.RequestProcessorRegistry;
+import java.rmi.registry.LocateRegistry;
 
 /**
  * A serving container

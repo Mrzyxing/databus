@@ -65,7 +65,7 @@ if [ ! -z "$cli_overrides" ] ; then
 fi
 
 case "${source_name}" in 
-  "person" ) main_class=com.linkedin.databus.client.example.PersonClientMain ;;
+  "person" ) main_class=com.linkedin.databus.client.example.PeekClientMain ;;
 esac
 
 cmdline="java -cp ${cp} ${jvm_arg_line} ${main_class} ${java_arg_line} $cli_overrides $*"

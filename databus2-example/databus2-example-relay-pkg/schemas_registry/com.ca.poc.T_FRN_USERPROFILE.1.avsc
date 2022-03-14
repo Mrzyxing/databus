@@ -1,0 +1,214 @@
+{
+  "meta" : "dbFieldName=sy$t_frn_userprofile;dbFieldType=sy$t_frn_userprofile;pk=USERID",
+  "name" : "T_FRN_USERPROFILE_V1",
+  "namespace" : "com.ca.poc",
+  "doc" : "Auto-generated Avro schema for sy$t_frn_userprofile. Generated at Feb 11, 2022 02:12:27 PM CST",
+  "type" : "record",
+  "fields" : [ {
+    "default" : null,
+    "meta" : "dbFieldName=TXN;dbFieldPosition=0;dbFieldType=LONG;",
+    "name" : "TXN",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=USERID;dbFieldPosition=1;dbFieldType=LONG;",
+    "name" : "USERID",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=USERNAME;dbFieldPosition=2;dbFieldType=VARCHAR2;",
+    "name" : "USERNAME",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PASSWORD;dbFieldPosition=3;dbFieldType=VARCHAR2;",
+    "name" : "PASSWORD",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=TITLE;dbFieldPosition=4;dbFieldType=CHAR;",
+    "name" : "TITLE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=POINTOFSALE;dbFieldPosition=5;dbFieldType=VARCHAR2;",
+    "name" : "POINTOFSALE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=TELEPHONE;dbFieldPosition=6;dbFieldType=VARCHAR2;",
+    "name" : "TELEPHONE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=TELEPHONEAREACODE;dbFieldPosition=7;dbFieldType=CHAR;",
+    "name" : "TELEPHONEAREACODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=TELEPHONECOUNTRYCODE;dbFieldPosition=8;dbFieldType=CHAR;",
+    "name" : "TELEPHONECOUNTRYCODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=USERSTATUS;dbFieldPosition=9;dbFieldType=CHAR;",
+    "name" : "USERSTATUS",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FFPID;dbFieldPosition=10;dbFieldType=VARCHAR2;",
+    "name" : "FFPID",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FFPBIND;dbFieldPosition=11;dbFieldType=LONG;",
+    "name" : "FFPBIND",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILEPHONE;dbFieldPosition=12;dbFieldType=VARCHAR2;",
+    "name" : "MOBILEPHONE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PHONEBIND;dbFieldPosition=13;dbFieldType=LONG;",
+    "name" : "PHONEBIND",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILEAREACODE;dbFieldPosition=14;dbFieldType=VARCHAR2;",
+    "name" : "MOBILEAREACODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILECOUNTRYCODE;dbFieldPosition=15;dbFieldType=CHAR;",
+    "name" : "MOBILECOUNTRYCODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=REFEREE;dbFieldPosition=16;dbFieldType=VARCHAR2;",
+    "name" : "REFEREE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=EMAIL;dbFieldPosition=17;dbFieldType=VARCHAR2;",
+    "name" : "EMAIL",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=EMAILBIND;dbFieldPosition=18;dbFieldType=LONG;",
+    "name" : "EMAILBIND",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=COUNTRY;dbFieldPosition=19;dbFieldType=CHAR;",
+    "name" : "COUNTRY",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PROVINCE;dbFieldPosition=20;dbFieldType=VARCHAR2;",
+    "name" : "PROVINCE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=CONTACTADDR;dbFieldPosition=21;dbFieldType=VARCHAR2;",
+    "name" : "CONTACTADDR",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=POSTCODE;dbFieldPosition=22;dbFieldType=VARCHAR2;",
+    "name" : "POSTCODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=BIRTHDAY;dbFieldPosition=23;dbFieldType=DATE;",
+    "name" : "BIRTHDAY",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GENDER;dbFieldPosition=24;dbFieldType=CHAR;",
+    "name" : "GENDER",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FAMILYNAMEEN;dbFieldPosition=25;dbFieldType=VARCHAR2;",
+    "name" : "FAMILYNAMEEN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GIVENNAMEEN;dbFieldPosition=26;dbFieldType=VARCHAR2;",
+    "name" : "GIVENNAMEEN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FAMILYNAMECH;dbFieldPosition=27;dbFieldType=VARCHAR2;",
+    "name" : "FAMILYNAMECH",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GIVENNAMECH;dbFieldPosition=28;dbFieldType=VARCHAR2;",
+    "name" : "GIVENNAMECH",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=IDTYPE;dbFieldPosition=29;dbFieldType=CHAR;",
+    "name" : "IDTYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=IDNUMBER;dbFieldPosition=30;dbFieldType=VARCHAR2;",
+    "name" : "IDNUMBER",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=HASREGISTERFORADV;dbFieldPosition=31;dbFieldType=LONG;",
+    "name" : "HASREGISTERFORADV",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=QUESTIONTYPE;dbFieldPosition=32;dbFieldType=CHAR;",
+    "name" : "QUESTIONTYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PASSWORDQUESTION;dbFieldPosition=33;dbFieldType=VARCHAR2;",
+    "name" : "PASSWORDQUESTION",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=QUESTIONANSWER;dbFieldPosition=34;dbFieldType=VARCHAR2;",
+    "name" : "QUESTIONANSWER",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=REGISTERTIME;dbFieldPosition=35;dbFieldType=TIMESTAMP;",
+    "name" : "REGISTERTIME",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=UPDATETIME;dbFieldPosition=36;dbFieldType=TIMESTAMP;",
+    "name" : "UPDATETIME",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=LATESTLOGINTIME;dbFieldPosition=37;dbFieldType=TIMESTAMP;",
+    "name" : "LATESTLOGINTIME",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=LATESTLOGINIP;dbFieldPosition=38;dbFieldType=VARCHAR2;",
+    "name" : "LATESTLOGINIP",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=CREATETYPE;dbFieldPosition=39;dbFieldType=VARCHAR2;",
+    "name" : "CREATETYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=RESV2;dbFieldPosition=40;dbFieldType=VARCHAR2;",
+    "name" : "RESV2",
+    "type" : [ "null", "string" ]
+  } ]
+}
+

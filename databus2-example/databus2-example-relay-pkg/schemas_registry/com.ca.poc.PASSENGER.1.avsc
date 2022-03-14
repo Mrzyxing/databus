@@ -1,0 +1,139 @@
+{
+  "meta" : "dbFieldName=sy$passenger;dbFieldType=sy$passenger;pk=PK_FLYERID",
+  "name" : "PASSENGER_V1",
+  "namespace" : "com.ca.poc",
+  "doc" : "Auto-generated Avro schema for sy$passenger. Generated at Feb 11, 2022 02:15:02 PM CST",
+  "type" : "record",
+  "fields" : [ {
+    "default" : null,
+    "meta" : "dbFieldName=TXN;dbFieldPosition=0;dbFieldType=LONG;",
+    "name" : "TXN",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PK_FLYERID;dbFieldPosition=1;dbFieldType=LONG;",
+    "name" : "PK_FLYERID",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=USERID;dbFieldPosition=2;dbFieldType=LONG;",
+    "name" : "USERID",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=SSR2;dbFieldPosition=3;dbFieldType=CHAR;",
+    "name" : "SSR2",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=SSR1;dbFieldPosition=4;dbFieldType=CHAR;",
+    "name" : "SSR1",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=BIRTHDAY;dbFieldPosition=5;dbFieldType=DATE;",
+    "name" : "BIRTHDAY",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=NATIONALITY;dbFieldPosition=6;dbFieldType=CHAR;",
+    "name" : "NATIONALITY",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=NATION;dbFieldPosition=7;dbFieldType=CHAR;",
+    "name" : "NATION",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=D_CITY;dbFieldPosition=8;dbFieldType=VARCHAR2;",
+    "name" : "D_CITY",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=D_STATE;dbFieldPosition=9;dbFieldType=VARCHAR2;",
+    "name" : "D_STATE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PASSPORTISSUECOUNTRY;dbFieldPosition=10;dbFieldType=CHAR;",
+    "name" : "PASSPORTISSUECOUNTRY",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=EXPIRY;dbFieldPosition=11;dbFieldType=DATE;",
+    "name" : "EXPIRY",
+    "type" : [ "null", "long" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FFPNUMBER;dbFieldPosition=12;dbFieldType=VARCHAR2;",
+    "name" : "FFPNUMBER",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FFPTYPE;dbFieldPosition=13;dbFieldType=CHAR;",
+    "name" : "FFPTYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=IDNUMBER;dbFieldPosition=14;dbFieldType=VARCHAR2;",
+    "name" : "IDNUMBER",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=IDTYPE;dbFieldPosition=15;dbFieldType=CHAR;",
+    "name" : "IDTYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=PAXTYPE;dbFieldPosition=16;dbFieldType=CHAR;",
+    "name" : "PAXTYPE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=EMAILADDR;dbFieldPosition=17;dbFieldType=CHAR;",
+    "name" : "EMAILADDR",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILEPHONE;dbFieldPosition=18;dbFieldType=CHAR;",
+    "name" : "MOBILEPHONE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILEAREACODE;dbFieldPosition=19;dbFieldType=CHAR;",
+    "name" : "MOBILEAREACODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=MOBILECOUNTRYCODE;dbFieldPosition=20;dbFieldType=CHAR;",
+    "name" : "MOBILECOUNTRYCODE",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GIVENNAMECN;dbFieldPosition=21;dbFieldType=VARCHAR2;",
+    "name" : "GIVENNAMECN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FAMILYNAMECN;dbFieldPosition=22;dbFieldType=VARCHAR2;",
+    "name" : "FAMILYNAMECN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GIVENNAMEEN;dbFieldPosition=23;dbFieldType=VARCHAR2;",
+    "name" : "GIVENNAMEEN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=FAMILYNAMEEN;dbFieldPosition=24;dbFieldType=VARCHAR2;",
+    "name" : "FAMILYNAMEEN",
+    "type" : [ "null", "string" ]
+  }, {
+    "default" : null,
+    "meta" : "dbFieldName=GENDER;dbFieldPosition=25;dbFieldType=CHAR;",
+    "name" : "GENDER",
+    "type" : [ "null", "string" ]
+  } ]
+}
+

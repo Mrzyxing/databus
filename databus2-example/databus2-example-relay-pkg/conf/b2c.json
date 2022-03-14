@@ -1,0 +1,21 @@
+{
+  "name": "poc",
+  "id": 1,
+  "uri": "jdbc:oracle:thin:databus/databus@10.9.203.243:1521:tdp13online",
+  "slowSourceQueryThreshold": 2000,
+  "sources": [
+    {
+      "id": 101,
+      "name": "com.ca.poc.T_FRN_USERPROFILE",
+      "uri": "ACEPORTAL.T_FRN_USERPROFILE",
+      "partitionFunction": "constant:1"
+    },
+    {
+      "id": 102,
+      "name": "com.ca.poc.PASSENGER",
+      "uri": "ACEPORTAL.PASSENGER",
+      "partitionFunction": "constant:1"
+    }
+  ]
+}
+
