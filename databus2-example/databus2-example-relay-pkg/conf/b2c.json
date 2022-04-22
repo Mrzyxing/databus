@@ -1,7 +1,7 @@
 {
   "name": "poc",
   "id": 1,
-  "uri": "jdbc:oracle:thin:databus/databus@10.9.203.243:1521:tdp13online",
+  "uri": "jdbc:oracle:thin:ACEPORTAL/airchina@10.9.203.243:1521:tdp13online",
   "slowSourceQueryThreshold": 2000,
   "sources": [
     {

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../software/gradle-5.0-bin/gradle-5.0" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-client" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-client/databus-bootstrap-client-impl" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-common" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-common/databus-bootstrap-common-api" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-common/databus-bootstrap-common-impl" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-producer" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-producer/databus-bootstrap-producer-impl" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-server" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-server/databus-bootstrap-server-impl" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-server/databus-bootstrap-server-pkg" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-utils" />
+            <option value="$PROJECT_DIR$/databus-bootstrap-utils/databus-bootstrap-utils-impl" />
+            <option value="$PROJECT_DIR$/databus-client" />
+            <option value="$PROJECT_DIR$/databus-client/databus-client-api" />
+            <option value="$PROJECT_DIR$/databus-client/databus-client-common" />
+            <option value="$PROJECT_DIR$/databus-client/databus-client-http" />
+            <option value="$PROJECT_DIR$/databus-client/databus-client-test-util" />
+            <option value="$PROJECT_DIR$/databus-client/databus2-client-util" />
+            <option value="$PROJECT_DIR$/databus-cluster" />
+            <option value="$PROJECT_DIR$/databus-cluster/databus-cluster-manager-impl" />
+            <option value="$PROJECT_DIR$/databus-core" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-container" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-fwk-test" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-impl" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-schema-tools" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-schema-tools-pkg" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-schemas" />
+            <option value="$PROJECT_DIR$/databus-core/databus-core-schemas-test" />
+            <option value="$PROJECT_DIR$/databus-group-leader" />
+            <option value="$PROJECT_DIR$/databus-group-leader/databus-group-leader-api" />
+            <option value="$PROJECT_DIR$/databus-group-leader/databus-group-leader-example" />
+            <option value="$PROJECT_DIR$/databus-group-leader/databus-group-leader-impl" />
+            <option value="$PROJECT_DIR$/databus-relay" />
+            <option value="$PROJECT_DIR$/databus-relay/databus-relay-run" />
+            <option value="$PROJECT_DIR$/databus-tools" />
+            <option value="$PROJECT_DIR$/databus-tools/databus-dtail-impl" />
+            <option value="$PROJECT_DIR$/databus-tools/databus-tools-pkg" />
+            <option value="$PROJECT_DIR$/databus-util-cmdline" />
+            <option value="$PROJECT_DIR$/databus-util-cmdline/databus-util-cmdline-impl" />
+            <option value="$PROJECT_DIR$/databus-util-cmdline/databus2-cmdline-tools-pkg" />
+            <option value="$PROJECT_DIR$/databus2-example" />
+            <option value="$PROJECT_DIR$/databus2-example/database" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-bst-producer-pkg" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-client" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-client-pkg" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-person" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-relay" />
+            <option value="$PROJECT_DIR$/databus2-example/databus2-example-relay-pkg" />
+            <option value="$PROJECT_DIR$/databus2-example/schemas_registry" />
+            <option value="$PROJECT_DIR$/databus2-relay" />
+            <option value="$PROJECT_DIR$/databus2-relay/databus2-event-producer-common" />
+            <option value="$PROJECT_DIR$/databus2-relay/databus2-event-producer-mock" />
+            <option value="$PROJECT_DIR$/databus2-relay/databus2-event-producer-or" />
+            <option value="$PROJECT_DIR$/databus2-relay/databus2-relay-impl" />
+            <option value="$PROJECT_DIR$/db" />
+            <option value="$PROJECT_DIR$/db/ca_databus_poc" />
+            <option value="$PROJECT_DIR$/db/databus2-bootstrap" />
+            <option value="$PROJECT_DIR$/db/oracle" />
+            <option value="$PROJECT_DIR$/db/templates" />
+            <option value="$PROJECT_DIR$/metrics-histograms" />
+            <option value="$PROJECT_DIR$/metrics-histograms/metrics-core-impl" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
