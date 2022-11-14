@@ -3,9 +3,12 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+  implementation 'org.apache.kafka:kafka-clients:3.0.0'
+
   compile project(':databus-client:databus-client-api')
   compile project(':databus-client:databus-client-common')
   compile project(':databus-client:databus-client-http')
+
 
   compile externalDependency.commonsCli
   compile externalDependency.log4j

@@ -7,8 +7,11 @@ import com.linkedin.databus.client.pub.ConsumerCallbackResult;
 import com.linkedin.databus.client.pub.DbusEventDecoder;
 import com.linkedin.databus.core.DbusEvent;
 import org.apache.avro.generic.GenericRecord;
+import org.apache.avro.util.Utf8;
 import org.apache.log4j.Logger;
+import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class SyncConsumer extends AbstractDatabusCombinedConsumer {
@@ -36,7 +39,8 @@ public class SyncConsumer extends AbstractDatabusCombinedConsumer {
         try {
             Map<String, Object> rowData = Maps.newHashMap();
             decodedEvent.getSchema().getFields().forEach(field -> {
-                rowData.put(field.name(), field.doc());
+                rowData.put(field.name(),
+                        decodedEvent.get(field.name()) == null ? null : decodedEvent.get(field.name()).toString());
             });
             KafkaDao.insert(tableName, targetTopicName, rowData);
         } catch (Exception e) {

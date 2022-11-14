@@ -88,7 +88,7 @@ public class SyncClientMain {
         int port = client.getContainerStaticConfig().getHttpPort();
 
         // register callbacks
-        DatabusCombinedConsumer consumer = new PeekConsumer(config.getTableName(),
+        DatabusCombinedConsumer consumer = new SyncConsumer(config.getTableName(),
                 config.getTargetTopic());
         client.registerDatabusStreamListener(consumer, null, config.getSourceName());
         client.registerDatabusBootstrapListener(consumer, null, config.getSourceName());
