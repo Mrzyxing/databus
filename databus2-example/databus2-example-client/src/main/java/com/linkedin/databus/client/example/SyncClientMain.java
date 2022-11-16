@@ -19,6 +19,7 @@ package com.linkedin.databus.client.example;
  */
 
 import com.google.common.base.Splitter;
+import com.google.common.collect.Maps;
 import com.linkedin.databus.client.DatabusHttpClientImpl;
 import com.linkedin.databus.client.pub.DatabusCombinedConsumer;
 import com.linkedin.databus2.core.container.netty.ServerContainer;
@@ -27,7 +28,9 @@ import org.apache.commons.lang.math.NumberUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -38,6 +41,17 @@ public class SyncClientMain {
         SyncClientConfig.SyncClientConfigBuilder builder = SyncClientConfig.SyncClientConfigBuilder.aSyncClientConfig();
 
         builder.withArgs(args);
+
+        List<String> kfLines = FileUtils.readLines(new File("./conf/kf.config"));
+        final Map<String,String> kfConfigs = Maps.newHashMap();
+        kfLines.forEach(l ->{
+            Iterator<String> it = Splitter.on("=").limit(2).split(l).iterator();
+            while (it.hasNext()){
+                String k = it.next();
+                String v = it.next();
+                kfConfigs.put(k,v);
+            }
+        });
 
         @SuppressWarnings("unchecked")
         List<String> lines = FileUtils.readLines(new File("./conf/cli.config"));
@@ -58,7 +72,7 @@ public class SyncClientMain {
             SyncClientConfig syncClientConfig = syncClientConfigBuilder.build();
             threadPool.submit(() -> {
                 try {
-                    createClient(syncClientConfig);
+                    createClient(syncClientConfig, kfConfigs);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -66,7 +80,7 @@ public class SyncClientMain {
         });
     }
 
-    private static void createClient(SyncClientConfig config) throws Exception {
+    private static void createClient(SyncClientConfig config,Map<String,String> kfConfigs) throws Exception {
 
         DatabusHttpClientImpl.Config configBuilder = new DatabusHttpClientImpl.Config();
 
@@ -89,7 +103,7 @@ public class SyncClientMain {
 
         // register callbacks
         DatabusCombinedConsumer consumer = new SyncConsumer(config.getTableName(),
-                config.getTargetTopic());
+                config.getTargetTopic(),kfConfigs);
         client.registerDatabusStreamListener(consumer, null, config.getSourceName());
         client.registerDatabusBootstrapListener(consumer, null, config.getSourceName());
 

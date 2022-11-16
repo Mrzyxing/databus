@@ -7,6 +7,7 @@
 *.dbus
 *.gz
 .gradle/
+.idea/
 build/
 database/databus2-bootstrap/bin/
 database/oracle/bin/README

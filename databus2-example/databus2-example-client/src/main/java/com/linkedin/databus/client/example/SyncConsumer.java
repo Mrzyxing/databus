@@ -7,11 +7,8 @@ import com.linkedin.databus.client.pub.ConsumerCallbackResult;
 import com.linkedin.databus.client.pub.DbusEventDecoder;
 import com.linkedin.databus.core.DbusEvent;
 import org.apache.avro.generic.GenericRecord;
-import org.apache.avro.util.Utf8;
 import org.apache.log4j.Logger;
-import org.codehaus.jackson.map.ObjectMapper;
 
-import java.io.IOException;
 import java.util.Map;
 
 public class SyncConsumer extends AbstractDatabusCombinedConsumer {
@@ -19,6 +16,7 @@ public class SyncConsumer extends AbstractDatabusCombinedConsumer {
     public static final Logger LOG = Logger.getLogger(SyncConsumer.class.getName());
     private String tableName;
     private String targetTopicName;
+    private Map<String,String> optionKafkaConfigs;
 
     public SyncConsumer(ConsumerCallbackResult defaultStreamAnswer,
                         ConsumerCallbackResult defaultBootstrapAnswer, String tableName,
@@ -28,9 +26,10 @@ public class SyncConsumer extends AbstractDatabusCombinedConsumer {
         this.targetTopicName = targetTopicName;
     }
 
-    public SyncConsumer(String tableName, String targetTopicName) {
+    public SyncConsumer(String tableName, String targetTopicName, Map<String, String> kfConfigs) {
         this.tableName = tableName;
         this.targetTopicName = targetTopicName;
+        this.optionKafkaConfigs = kfConfigs;
     }
 
     private ConsumerCallbackResult processEvent(DbusEvent event,
@@ -42,7 +41,7 @@ public class SyncConsumer extends AbstractDatabusCombinedConsumer {
                 rowData.put(field.name(),
                         decodedEvent.get(field.name()) == null ? null : decodedEvent.get(field.name()).toString());
             });
-            KafkaDao.insert(tableName, targetTopicName, rowData);
+            KafkaDao.insert(tableName, targetTopicName, rowData,optionKafkaConfigs);
         } catch (Exception e) {
             LOG.error("error decoding event ", e);
             return ConsumerCallbackResult.ERROR;
